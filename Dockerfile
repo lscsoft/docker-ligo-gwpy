@@ -1,4 +1,7 @@
-FROM ligo/builder:jessie as builder
+# Turns out DockerHub does not yet support multi-stage builds!
+# Wait for it to use Docker 17.05!
+#FROM ligo/builder:jessie as builder
+FROM ligo/builder:jessie
 
 WORKDIR /root/
 RUN apt-get update && \
